@@ -1,0 +1,44 @@
+📌 ETL Process for Business Insights 360
+ETL (Extract, Transform, Load) Process Documentation
+
+📌 Step 1: Extract (E) - Data Collection
+Data Sources:
+MySQL Database → Extracted data using SQL queries.
+Excel Files → Sales_Data.xlsx, Customer_Data.xlsx.
+CSV Files → Product_Data.csv.
+Data Extraction Methods:
+SQL Queries (MySQL) → Pull relevant sales, customer, and product data.
+Power Query (Excel/Power BI) → Import data from Excel and CSV files.
+📌 Step 2: Transform (T) - Data Cleaning & Processing
+Data Cleaning Steps:
+✅ Remove duplicates from imported data.
+✅ Handle missing values (e.g., filling NULLs with default values or averages).
+✅ Convert data types (e.g., Date fields converted to date format, numerical values cleaned).
+✅ Standardize column names (e.g., Customer_ID, Product_ID, Total_Sales).
+
+Data Transformation Steps:
+✔ Create calculated columns (e.g., Total Sales = Quantity × Unit Price).
+✔ Aggregate data by Region, Product, and Customer for insights at different levels.
+✔ Join tables using common fields like Customer_ID, Product_ID to merge datasets.
+✔ Apply business rules like Gross Margin % calculation and other metrics.
+
+📌 Step 3: Load (L) - Data Storage
+Destination:
+Power BI Data Model → For creating interactive dashboards and reports.
+SQL Database → Storing cleaned and transformed data for further use.
+Excel/CSV Export → For exporting clean data for external analysis or sharing.
+Loading Methods:
+📌 Power BI Import Mode → Data is imported into Power BI for fast performance.
+📌 Power BI DirectQuery Mode → For live data connections and updates.
+📌 Scheduled Refresh → Automating data refresh in Power BI Service to keep reports up-to-date.
+
+📌 Additional Considerations
+📌 Data Refresh Frequency: Data is refreshed on a scheduled basis to ensure up-to-date reporting.
+📌 Data Validation Checks: Perform regular checks to validate transformations and calculations.
+📌 Error Handling: Log any issues with data extraction or transformation for debugging and improvements.
+
+📌 How to Update ETL Process?
+1️⃣ Modify SQL queries or Power Query steps to handle new data or transformations.
+2️⃣ Validate transformed data to ensure quality.
+3️⃣ Load updated data into Power BI using the defined methods.
+4️⃣ Set up Scheduled Refresh to automate future data updates in Power BI Service.
